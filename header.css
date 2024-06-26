@@ -1,0 +1,142 @@
+.header {
+  display: flex;
+  height: 56px;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 0px 18px 0px 18px;
+  position: fixed;
+  background-color: white;
+  z-index: 100;
+  /* border-bottom: 1px solid rgb(228, 228, 228); */
+}
+.left-section {
+  display: flex;
+  align-items: center;
+}
+.ham-icon,
+.create-button,
+.notification-button {
+  width: 38px;
+  height: 38px;
+  margin-right: 18px;
+  border-radius: 19px;
+}
+.hamburger {
+  height: 24px;
+}
+.ham-icon:hover,
+.src-button:hover,
+.voice-src:hover,
+.create-button:hover,
+.notification-button:hover {
+  background-color: rgb(228, 228, 228);
+}
+.ytlogo {
+  height: 20px;
+}
+.mid-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-left: 152px;
+  margin-right: 130px;
+  max-width: 650px;
+}
+.search-bar {
+  flex: 1;
+  height: 38px;
+  padding-left: 16px;
+  border: 1px solid rgb(182, 182, 182);
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  width: 0;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+}
+.search-bar::placeholder {
+  font-size: 15px;
+  font-weight: 500;
+}
+.src-button {
+  height: 41px;
+  width: 66px;
+  padding: 0px 18px 0px 18px;
+  border-top-right-radius: 21px;
+  border-bottom-right-radius: 21px;
+  margin-left: -1px;
+  margin-right: 18px;
+  border: 1px solid rgb(182, 182, 182);
+  cursor: pointer;
+}
+.src-icon {
+  height: 26px;
+}
+.ham-icon,
+.src-button,
+.voice-src,
+.create-button,
+.notification-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.src-button .tooltip,
+.voice-src .tooltip,
+.create-button .tooltip,
+.notification-button .tooltip {
+  position: absolute;
+  background-color: rgb(113, 110, 110);
+  color: white;
+  padding: 10px 6px 10px 6px;
+  border-radius: 2px;
+  bottom: -56px;
+  opacity: 0;
+  transition: opacity 0.30s, background-color 0.30s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.src-button:hover .tooltip,
+.voice-src:hover .tooltip,
+.create-button:hover .tooltip,
+.notification-button:hover .tooltip {
+  opacity: 1;
+}
+.voice-src {
+  padding: 7px;
+  background-color: rgb(240, 239, 239);
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+}
+.voice-icon {
+  height: 25px;
+}
+.right-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.create-button,
+.notification-button {
+  border: none;
+  background-color: white;
+}
+.create-icon,
+.noti-icon{
+  height: 26px;
+}
+.notification-count{
+  position: absolute;
+  font-size: 10px;
+  background-color: rgb(244, 25, 25);
+  color: white;
+  right: 1px;
+  top: 2px;
+  padding: 3px;
+  border-radius: 8px;
+}
+.acc-icon {
+  height: 30px;
+  border-radius: 20px;
+}

@@ -1,0 +1,121 @@
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 50px;
+}
+.thumbnail {
+  width: 100%;
+  border-radius: 10px;
+}
+main a {
+  text-decoration: none;
+  color: black;
+}
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+.thumbnail-box {
+  margin-bottom: 10px;
+  position: relative;
+}
+.video-time {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px;
+  border-radius: 2px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 9px;
+  right: 8px;
+  position: absolute;
+}
+.video-title {
+  width: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limit the text to 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+.ch-pfp {
+  width: 38px;
+  border-radius: 50px;
+}
+.ch-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #585757;
+  margin-bottom: 4px;
+}
+.video-stats {
+  font-size: 14px;
+  color: #585757;
+}
+.profile-picture-container {
+  position: relative;
+  display: inline-block;
+}
+.pfph {
+  margin-right: 10px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+}
+.profile-picture {
+  width: 60px;
+  height: 60px;
+  border-radius: 40px;
+  margin-right: 8px;
+}
+.name-tip {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+.subs-tip {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(96, 96, 96);
+}
+.channel-tooltip {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 12px 12px;
+  width: 250px;
+  top: 55px;
+  z-index: 300;
+  opacity: 0;
+  border-radius: 6px;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.25s;
+  pointer-events: none;
+}
+.profile-picture-container:hover .channel-tooltip {
+  opacity: 1;
+}
+@media (max-width: 750px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 751px) and (max-width: 999px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1000px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
